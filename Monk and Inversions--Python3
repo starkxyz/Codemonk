@@ -1,0 +1,18 @@
+for i in range(int(input())):
+    mat=[]
+    rc=int(input())
+    for j in range(0,rc):
+        entries=list(map(int, input().split(" ")))
+        mat.append(entries)
+        a=0
+        b=0
+        temp=0
+    for a in range(0,rc):
+        for b in range(0,rc):
+            for j in range(0,rc):
+                for k in range(0,rc):
+                    if(mat[a][b]>mat[j][k]):
+                        if(a<=j):
+                            if(b<=k):
+                                temp=temp+1
+    print(temp)
